@@ -131,7 +131,7 @@ If you want to create your own project to practice you can start a new project a
 
 &nbsp;  
 
-#### To resolve the conflict using IntelliJ resolve conflict GUI we need to ***merge code in remote develop into tester 2s original branch***. Projects with protected branches prevent merging develop directly into another branch without creating a PR.
+#### To resolve the conflict using IntelliJ resolve conflict GUI we need to ***merge code in remote develop into tester 2s original branch***. Projects with protected branches prevent merging local and remote develop directly into another branch without creating a PR.
 
 #### Instead of merging develop into tester 2s branch we can create a copy of remote develop and merge the copy into tester 2s branch and trigger the resolve conflict GUI
 
@@ -144,27 +144,22 @@ git pull origin develop|updates local develop branch to match remote develop bra
 git checkout -b remoteDevelopCopy|create a new branch while checked out to local develop. New branch is identicle to remote develop
 git checkout B2G2-098|switch our working branch to our original branch that has conflicts with remote develop
 git merge remoteDevelopCopy|merge the copy of remote develop we created into original branch
-&nbsp;
 
-pull remote develop to our local develop, create a new branch while checked out to local develop. This will trigger intelij resolve conflict GUI.
-* Create a new branch. When you are checkout to a branch and create a new one the new branch will be an exact copy of the branch your currently checkout out to.
-  * _git checkout -b resolveConflict_
+* first we checkout to local develop and update local develop
+* create new branch while checked out to develop
+* checkout to original branch then use new branch to merge into original branch
+&nbsp;  
+  &nbsp;
 
-  
-* 
-  * _git checkout tester2_
-  * _git merge resolveConflict_
-  
 
-* tester 2 now can resolve the merge conflict using IntelliJ GUI. Tester 2 can now resolve the conflicts using IntelliJ GUI by navigating to commit panel located on left side (used for making commits and pushing). tester 2 resolves the merge conflicts. When tester2 clicks apply/save the changes are committed to tester 2s local repository
-  * more [information](https://www.jetbrains.com/help/idea/resolve-conflicts.html) on resolving conflicts using IntelliJ GUI  
+* Tester 2 can now resolve the conflicts using IntelliJ GUI by navigating to commit panel located on left side (used for making commits and pushing).
   
 
-* Tester2 deletes the resolveConflict branch since it is not required anymore
-  * _git branch -D resolveConflict_
+* Delete the branch used to merge into original  
+  * _git branch -D remoteDevelopCopy_
   
 
-* Since tester2 is still checked out to their original branch they can push their changes committed to their local repository to the remote repository and creates a pull request
+* Push changes to remote repository and create a PR
     * _git push_
   
 
