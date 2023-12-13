@@ -143,4 +143,8 @@ public class Utilities extends Driver{
         }
         return texts;
     }
+
+    private void resolveConflictMethod(String[] arr) {
+
+    }
 }

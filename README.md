@@ -104,7 +104,7 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
 
-* Create a new utility method on line 151-153. Overload method on line 16. the method accepts String[] parameter. 
+* Create a new utility method on line 147-150. Overload method on line 16. the method accepts String[] parameter. 
 ```java
     private void resolveConflictMethod(String[] arr) {
         
