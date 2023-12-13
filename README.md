@@ -71,7 +71,7 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
 
-* Tester one then begins to commit their work by staging the unversioned files. A file is unversioned when it is new and git has not marked it for versioning yet.  
+* Before committing check if you have any untracked files using _git status_ red file names are untracked, green file names are tracked. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
     * _git add ._ or _git add --all_
   
 
@@ -79,7 +79,7 @@ If you want to create your own project to practice you can start a new project a
     * _git commit -m "message"_
 
 
-* add tester 1s branch to remote repository and push. A local branch that does not exist on the remote repository must be added before you can push using _git push_
+* add tester 1s branch to remote repository and push with the command below. A local branch that does not exist on the remote repository must be added before you can push using _git push_.
   * _git push --set-upstream origin B2G2-096_  
 
 
@@ -107,7 +107,7 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
   
-* Stage the unversioned files before committing changes to local repository
+* Before committing check if you have any untracked files using _git status_ red file names are untracked, green file names are tracked. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
   * _git add --all_  
   
 
@@ -115,7 +115,7 @@ If you want to create your own project to practice you can start a new project a
   * _git commit -m "message"_  
   
 
-* add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push using _git push_
+* add tester 1s branch to remote repository and push with the command below. A local branch that does not exist on the remote repository must be added before you can push using _git push_.
   * _git push --set-upstream origin B2G2-098_
 
 #### tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
