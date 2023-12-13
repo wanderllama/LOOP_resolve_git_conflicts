@@ -13,10 +13,6 @@ import java.util.List;
 
 public class Utilities extends Driver{
 
-    private void resolveConflictMethod(String a, String b) {
-
-    }
-
     private static WebDriverWait wait;
 
     // Create Selenium Objects
@@ -146,9 +142,5 @@ public class Utilities extends Driver{
             texts.add(element.getText());
         }
         return texts;
-    }
-
-    private void resolveConflictMethod(String[] arr) {
-
     }
 }
