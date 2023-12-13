@@ -71,7 +71,7 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
 
-* Before committing check if you have any untracked files using _git status_ red file names are untracked, green file names are tracked. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
+* Before committing check if you have any untracked files using _**git status**_. **Red** file names are **untracked**, **green** file names are **tracked**. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
     * _git add ._ or _git add --all_
   
 
@@ -107,7 +107,7 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
   
-* Before committing check if you have any untracked files using _git status_ red file names are untracked, green file names are tracked. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
+* Before committing check if you have any untracked files using _**git status**_. **Red** file names are **untracked**, **green** file names are **tracked**. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
   * _git add --all_  
   
 
