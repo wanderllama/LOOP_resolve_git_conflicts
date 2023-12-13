@@ -16,6 +16,11 @@ import java.time.Duration;
 public class TestCases {
 
     @Test
+    public void test01() {
+
+    }
+
+    @Test
     public void resolveGitConflictMethod() {
         Driver.getDriver().get("https://www.google.com");
         WebElement element =  Driver.getDriver().findElement(By.xpath("(//textarea)[1]"));
