@@ -119,13 +119,9 @@ If you want to create your own project to practice you can start a new project a
   * _git commit -m "message"_  
   
 
-* add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
-  * _git push --set-upstream origin develop_  
-  
-
-* Tester 2 then pushes their code to remote repository
-  * _git push origin B2G2-098_
-  
+* add tester 2s branch to remote repository and push. A local branch that does not exist on the remote repository must be added before you can push using _git push_
+  * _git push --set-upstream origin B2G2-098_  
+ 
 
 * tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
 &nbsp;  
