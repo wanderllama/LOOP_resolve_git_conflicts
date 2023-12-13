@@ -79,7 +79,7 @@ If you want to create your own project to practice you can start a new project a
     * _git commit -m "message"_
 
 
-* add tester 1s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
+* add tester 1s branch to remote repository and push. A local branch that does not exist on the remote repository must be added before you can push using _git push_
   * _git push --set-upstream origin develop_  
 
 
