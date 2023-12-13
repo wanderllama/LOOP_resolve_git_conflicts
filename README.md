@@ -124,7 +124,7 @@ If you want to create your own project to practice you can start a new project a
   
 
 * Tester 2 then pushes their code to remote repository
-  * _git push_
+  * _git push origin B2G2-098_
   
 
 * tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
