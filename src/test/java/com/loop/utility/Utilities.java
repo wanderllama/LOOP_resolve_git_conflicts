@@ -13,6 +13,10 @@ import java.util.List;
 
 public class Utilities extends Driver{
 
+    private void resolveConflictMethod(String[] arr) {
+
+    }
+
     private static WebDriverWait wait;
 
     // Create Selenium Objects
