@@ -1,14 +1,11 @@
-package com.loop.test.day1_selenium_intro;
+package com.loop.utility;
 
 public class SafeData {
-
-    private String username = "b1g2_client@gmail.com";
+    private String userName = "b1g2_client@gmail.com";
     public String password = "Group2";
-
     public String getUsername() {
-        return username;
+        return userName;
     }
-
     public String getPassword() {
         return password;
     }
