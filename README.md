@@ -116,7 +116,7 @@ If you want to create your own project to practice you can start a new project a
   
 
 * Commit changes to local repository
-  * _git commit -m “tester2”_  
+  * _git commit -m "message"_  
   
 
 * add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
