@@ -1,8 +1,6 @@
-package com.utility;
+package com.loop.utility;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,6 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Utilities extends Driver{
+
+    private void resolveConflictMethod(String a, String b) {
+
+    }
 
     private static WebDriverWait wait;
 
