@@ -84,7 +84,7 @@ If you want to create your own project to practice you can start a new project a
 
 
 * Tester one pushes their local repository to the remote repository
-    * _git push_
+    * _git push origin B2G2-096_
   
 
 * tester one will log into GitHub and create a pull request to merge their branch into develop branch then they will report to their test leads or code reviewers letting them know they created a PR. Complete the merge request and merge tester 1s branch into develop
