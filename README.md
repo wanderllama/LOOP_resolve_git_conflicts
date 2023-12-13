@@ -75,19 +75,15 @@ If you want to create your own project to practice you can start a new project a
     * _git add ._ or _git add --all_
   
 
-* Tester one commits to their local repository. Message is mandatory and good practice is having a detailed message explaining the changes in the commit.  
+* Tester one commits to their local repository. Message is mandatory and good practice is a detailed message explaining the changes in the commit.  
     * _git commit -m "message"_
 
 
 * add tester 1s branch to remote repository and push. A local branch that does not exist on the remote repository must be added before you can push using _git push_
-  * _git push --set-upstream origin develop_  
+  * _git push --set-upstream origin B2G2-096_  
 
 
-* Tester one pushes their local repository to the remote repository
-    * _git push origin B2G2-096_
-  
-
-* tester one will log into GitHub and create a pull request to merge their branch into develop branch then they will report to their test leads or code reviewers letting them know they created a PR. Complete the merge request and merge tester 1s branch into develop
+* tester one will log into GitHub and create a pull request to **merge their branch into develop branch**
 
 &nbsp;
 ### Tester 2 steps
@@ -119,17 +115,13 @@ If you want to create your own project to practice you can start a new project a
   * _git commit -m "message"_  
   
 
-* add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
-  * _git push --set-upstream origin develop_  
-  
+* add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push using _git push_
+  * _git push --set-upstream origin B2G2-098_
 
-* Tester 2 then pushes their code to remote repository
-  * _git push origin B2G2-098_
-  
+#### tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
+![git conflict when creating PR.png](.idea%2Fpictures%2Fgit%20conflict%20when%20creating%20PR.png)
 
-* tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
-&nbsp;  
-
+&nbsp;
 #### To resolve the conflict using IntelliJ resolve conflict GUI we need to ***merge code in remote develop into tester 2s original branch***. Projects with protected branches prevent merging local and remote develop directly into another branch without creating a PR.
 
 #### Instead of merging develop into tester 2s branch we can create a copy of remote develop and merge the copy into tester 2s branch and trigger the resolve conflict GUI
