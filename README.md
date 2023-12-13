@@ -5,7 +5,7 @@ The develop branch is the only branch allowed to merge into the main branch. The
 not be merged directly. The goal is to resolve a merge conflict that is preventing a branch from merging into develop.
 
 &nbsp;  
-#### You can fork and clone the project. Forking the project will allow you to practice without anyone else pushing code you are not expecting.  
+#### You can fork and clone the project. Forking the project will add a repository to your account that is a copy of this one. Then you can pull the project.
 * log into GitHub and navigate to [repository](https://github.com/wanderllama/loop_git)
 * click on fork in the top right corner
 * unselect the checkbox _Copy the master branch only_ 
