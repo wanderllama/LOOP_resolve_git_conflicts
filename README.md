@@ -42,9 +42,9 @@ If you want to create your own project to practice you can start a new project a
 
 * they both checkout to their new branch and start working 
   * _git checkout B2G2-096_ 
-  * _git checkout B2G2-098_  
+  * _git checkout B2G2-098_
   
-
+  
 * you can create a new branch and checkout to the new branch in one command
     * _git checkout -b branchName_    
 &nbsp;
@@ -77,6 +77,10 @@ If you want to create your own project to practice you can start a new project a
 
 * Tester one commits to their local repository. Message is mandatory and good practice is having a detailed message explaining the changes in the commit.  
     * _git commit -m "message"_
+
+
+* add tester 1s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
+  * _git push --set-upstream origin develop_  
 
 
 * Tester one pushes their local repository to the remote repository
@@ -112,23 +116,18 @@ If you want to create your own project to practice you can start a new project a
   
 
 * Commit changes to local repository
-  * _git commit -m “tester2”_
+  * _git commit -m “tester2”_  
+  
+
+* add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
+  * _git push --set-upstream origin develop_  
   
 
 * Tester 2 then pushes their code to remote repository
   * _git push_
   
 
-* tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.
-  
-
-* In intelij check out the develop branch. 
-    * _git checkout develop_
-  
-
-* pull the remote repository and update the local develop branch. Now the local develop branch will match the remote develop branch. 
-  * _git pull_
-
+* tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
 &nbsp;  
 
 #### To resolve the conflict using IntelliJ resolve conflict GUI we need to ***merge code in remote develop into tester 2s original branch***. Projects with protected branches prevent merging local and remote develop directly into another branch without creating a PR.
@@ -147,7 +146,7 @@ git merge remoteDevelopCopy|merge the copy of remote develop we created into ori
 
 * first we checkout to local develop and update local develop
 * create new branch while checked out to develop
-* checkout to original branch then use new branch to merge into original branch
+* checkout to original branch then use new branch to merge into original branch. git will attempt to combine the two branches and trigger a conflict.
 &nbsp;  
   &nbsp;
 
