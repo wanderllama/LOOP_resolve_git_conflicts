@@ -116,7 +116,7 @@ If you want to create your own project to practice you can start a new project a
   
 
 * Commit changes to local repository
-  * _git commit -m “tester2”_  
+  * _git commit -m "message"_  
   
 
 * add tester 2s branch to remote repository. A local branch that does not exist on the remote repository must be added before you can push to remote repository
@@ -124,7 +124,7 @@ If you want to create your own project to practice you can start a new project a
   
 
 * Tester 2 then pushes their code to remote repository
-  * _git push_
+  * _git push origin B2G2-098_
   
 
 * tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
