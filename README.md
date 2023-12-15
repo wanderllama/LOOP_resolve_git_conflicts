@@ -35,22 +35,22 @@ If you want to create your own project to practice you can start a new project a
   * _git pull origin master_
   
 
-* create a new branch for each tester. Many projects using JIRA require branch names to match with the ticket getting worked   
+* create a new branch for each tester. Many projects using JIRA require branch names to match the ticket the code was created for
   * _git checkout develop_ 
   * _git branch B2G2-096_
   * _git branch B2G2-098_ 
   
 
-* they both checkout to their new branch and start working 
+* they both checkout to their new branch and start working, for now just checkout to tester 1s branch.
   * _git checkout B2G2-096_ 
   * _git checkout B2G2-098_
   
   
-* you can create a new branch and checkout to the new branch in one command
+* you can create a new branch and checkout to it in one command
     * _git checkout -b branchName_    
 &nbsp;
 ### Tester 1 steps
-#### For this practice we will walk through tester1 first and create a pull request and merge their work then complete the tester2 steps
+#### For this practice we will walk through tester 1s steps first, create a pull request, then merge code into develop
 
 
 * checkout to tester ones branch
@@ -72,7 +72,8 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
 
-* Before committing check if you have any untracked files using _**git status**_. **Red** file names are **untracked**, **green** file names are **tracked**. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
+* Before committing check if you have untracked files using _**git status**_ command. A file is untracked when it is new and git has not marked it for versioning. Only tracked files are committed.  
+  * **Red** file names are **untracked**, **green** file names are **tracked**. 
     * _git add ._ or _git add --all_
   
 
@@ -89,7 +90,7 @@ If you want to create your own project to practice you can start a new project a
 &nbsp;
 ### Tester 2 steps
 
-* Checkout to test 2s branch you created at the [beginning](#Start)
+* Checkout to tester 2s branch you created at the [beginning](#Start)
   * _git checkout B2G2-098_  
 
   
@@ -108,7 +109,8 @@ If you want to create your own project to practice you can start a new project a
     }
 ```
   
-* Before committing check if you have any untracked files using _**git status**_. **Red** file names are **untracked**, **green** file names are **tracked**. A file is untracked when it is new and git has not marked it for versioning yet. Only tracked files can be committed.
+* Before committing check if you have untracked files using _**git status**_ command. A file is untracked when it is new and git has not marked it for versioning. Only tracked files are committed.  
+  * **Red** file names are **untracked**, **green** file names are **tracked**. 
   * _git add --all_  
   
 
@@ -116,16 +118,16 @@ If you want to create your own project to practice you can start a new project a
   * _git commit -m "message"_  
   
 
-* add tester 1s branch to remote repository and push with the command below. A local branch that does not exist on the remote repository must be added before you can push using _git push_.
+* add tester 2s branch to remote repository and push with the command below. A local branch that does not exist on the remote repository must be added before you can push using _git push_.
   * _git push --set-upstream origin B2G2-098_
 
-#### tester two will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
+#### tester 2 will log into GitHub and create a pull request to merge their code into develop branch and sees that there is a conflict that needs to be resolved.  
 ![git conflict when creating PR.png](.idea%2Fpictures%2Fgit%20conflict%20when%20creating%20PR.png)
 
 &nbsp;
-#### To resolve the conflict using IntelliJ resolve conflict GUI we need to ***merge code in remote develop into tester 2s original branch***. Projects with protected branches prevent merging local and remote develop directly into another branch without creating a PR.
+#### To resolve the conflict in IntelliJ GUI we need to ***merge code in remote develop into tester 2s original branch***. Projects with protected branches prevent merging local and remote develop directly into another branch without creating a PR.
 
-#### Instead of merging develop into tester 2s branch we can create a copy of remote develop and merge the copy into tester 2s branch and trigger the resolve conflict GUI
+#### Instead of merging develop into tester 2s branch we can create a copy of remote develop and merge the copy into tester 2s branch. This will trigger the resolve conflict GUI
 
 We can use the commands in the left column to trigger IntelliJ resolve conflict GUI
 
@@ -153,7 +155,3 @@ git merge remoteDevelopCopy|merge the copy of remote develop we created into ori
 
 * Push changes to remote repository and create a PR
     * _git push_
-  
-
-
-
