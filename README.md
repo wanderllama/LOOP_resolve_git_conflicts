@@ -1,6 +1,6 @@
 ## Resolve Conflicts when working with Protected Branches
 
-This project is using gitflow git workflow as the branching strategy. This git strategy uses a develop branch to create branches from and then merge the branches back into develop by creating a pull request. The develop branch is merged in main less often, typically before release for software development. Feature branches do not merge directly into the main branch.
+This project is using gitflow git workflow as the branching strategy. This git strategy uses a develop branch to create branches from and then merge the branches back into develop by creating a pull request. The develop branch is not merged into main as often, typically before release for software development. Feature branches do not merge directly into the main branch.
 The develop branch is the only branch allowed to merge into the main branch. 
   
 The main and develop branch both have protection rule that prevent merging directly with them. Code can only be merged with these two branches by creating a pull request. Many project impliment these rules to protect these two important branches. Without these protections a merge conflict can be triggered easily by merging master or develop directly into the branch you want to trigger and resolve the conflicts with. This guide will show you how to resolve conflicts even with protection rules. 
