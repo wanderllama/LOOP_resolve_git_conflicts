@@ -6,14 +6,7 @@ The develop branch is the only branch allowed to merge into the main branch.
 The main and develop branch both have protection rule that prevent merging directly with them. Code can only be merged with these two branches by creating a pull request. Many project impliment these rules to protect these two important branches. Without these protections a merge conflict can be triggered easily by merging master or develop directly into the branch you want to trigger and resolve the conflicts with. This guide will show you how to resolve conflicts even with protection rules. 
 
 &nbsp;  
-#### You can fork and clone the project. Forking the project will add a repository to your account that is a copy of this one. Then you can pull the project.
-* log into GitHub and navigate to [repository](https://github.com/wanderllama/loop_git)
-* click on fork in the top right corner
-* unselect the checkbox _Copy the master branch only_ 
-* now you can clone the project and click [here](#Start) to start
-![fork.png](.idea/pictures/fork.png)
-&nbsp;  
-#### ... Or, create your own project
+#### Clone this project... or, create your own. 
 If you want to create your own project to practice you can start a new project and follow these steps to enable git, create develop branch, share project on GitHub, and create branch protection rules (optional).  
 
 * Enable vcs and select git using git tab in intellij (first option)  
