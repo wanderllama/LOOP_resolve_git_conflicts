@@ -2,20 +2,21 @@ package com.loop.test;
 
 
 import com.loop.utility.Driver;
+import com.loop.utility.Hooks;
 import com.loop.utility.SafeData;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class TestCases {
+public class TestCases extends Hooks {
 
-    @Test
+    @Test(groups = "group1")
     public void resolveGitConflictMethod() {
         Driver.getDriver().get("https://www.google.com");
         WebElement element =  Driver.getDriver().findElement(By.xpath("(//textarea)[1]"));
@@ -28,10 +29,10 @@ public class TestCases {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = "group2")
     public void docuportLogin() {
         SafeData safeData = new SafeData();
-        Driver.getDriver().get("https://beta.docuport.app/login");
+        Driver.getDriver().get(Hooks.getUrl());
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
         WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("input-14")));
         emailInput.sendKeys(safeData.getUsername());

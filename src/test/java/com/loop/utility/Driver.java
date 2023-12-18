@@ -18,7 +18,7 @@ public class Driver {
         b = browser.trim().isBlank() ? "" : browser.trim().toLowerCase();
     }
 
-    public static WebDriver getDriver(String browser) {
+    public static void setDriver(String browser) {
         setBrowser(browser);
         if (driver == null) {
             b = !b.isBlank() ? b : "chrome";
@@ -44,12 +44,11 @@ public class Driver {
                     throw new WebDriverException("%s is an invalid browser".formatted(b));
             }
         }
-        return driver;
     }
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            return getDriver("");
+            setDriver("");
         }
         return driver;
     }
