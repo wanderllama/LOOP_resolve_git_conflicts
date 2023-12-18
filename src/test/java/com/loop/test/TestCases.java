@@ -18,7 +18,6 @@ public class TestCases extends Hooks {
 
     @Test(groups = "group1")
     public void resolveGitConflictMethod() {
-        Driver.getDriver().get("https://www.google.com");
         WebElement element =  Driver.getDriver().findElement(By.xpath("(//textarea)[1]"));
         element.sendKeys("automation testing");
         element.sendKeys(Keys.ENTER);
