@@ -32,7 +32,6 @@ public class TestCases extends Hooks {
     @Test(groups = "group2")
     public void docuportLogin() {
         SafeData safeData = new SafeData();
-        Driver.getDriver().get(Hooks.getUrl());
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
         WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("input-14")));
         emailInput.sendKeys(safeData.getUsername());
